@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective: 1000px;
+  perspective: 500px;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 
 .card {
   transform-style: preserve-3d;
-  min-height: 80vh;
+  min-height: 90vh;
   width: 35rem;
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0 0 50px rgba(0, 0, 0, 0.2);
   border-radius: 30px;
@@ -97,6 +97,14 @@ button.active {
   cursor: pointer;
   border-radius: 30px;
   font-weight: bold;
+}
+.purchase button:checked {
+  border: none;
+  outline: none;
+}
+.purchase button:focus {
+  outline: none;
+  border: none;
 }
 
 /*# sourceMappingURL=style.css.map */
